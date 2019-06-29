@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer class="site-footer decorative-top">
+        <footer className="site-footer decorative-top">
           <p>
             This website is one of my attempt towards Accessibility awareness.
           </p>

@@ -12,7 +12,7 @@ const Chapter1 = () => {
       {userResponse === undefined ? (
         <section class="question-area">
           <Question>Can you read the below given text easily?</Question>
-          <p style={{ fontSize: "8px" }}>"I am a very small text"</p>
+          <p style={{ fontSize: "2rem", color: "#eee" }}>"Read me now"</p>
 
           <Button onClick={() => setUserResponse(false)}>
             Yes, no problem!
@@ -25,44 +25,39 @@ const Chapter1 = () => {
 
       {userResponse && (
         <section class="explanation">
-          <h1>Resize text</h1>
+          <h1>Color Contrast</h1>
 
           <p>
-            Exactly! This is because the font size of text is very less small.{" "}
+            Exactly! This is because the color contrast of the text is very less
+            with respect to its background.{" "}
             <mark>
               Users of the Internet have varying eye sight levels and it's
-              important to have a decent font size so that everyone can read
-              your website without strain.
+              important to have a good contrast so that everyone can read your
+              websites without strain
             </mark>
+            .
           </p>
 
           <p>
-            Browsers come at with a default font size of <strong>16px</strong>.
-            We should try to not go below that at least. Take 16px as your
-            smallest base and build your text hierarchy upwards.
-          </p>
-
-          <p>
-            At the very minimum set your font sizes in em so that users can zoom
-            in your website to increase font sizes.
+            This is why there is a recommended guideline just to prevent this
+            issue. It says so:
           </p>
 
           <BlockQuote
-            authorLink="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html"
+            authorLink="https://www.w3.org/TR/WCAG21/#contrast-minimum"
             authorLabel="w3.org"
           >
-            Except for captions and images of text, text can be resized without
-            assistive technology up to 200 percent without loss of content or
-            functionality.
+            The visual presentation of text and images of text has a contrast
+            ratio of at least 4.5:1.
           </BlockQuote>
 
-          <a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html">
-            Read more about "Resize texts".
+          <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">
+            Read more about Color contrast guidelines.
           </a>
         </section>
       )}
 
-      <Nav nextLink="/chapter-2/" />
+      <Nav nextLink="/chapter-3/" />
     </Layout>
   )
 }

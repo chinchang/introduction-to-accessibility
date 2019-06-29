@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import { PrimaryLink } from "../components/common"
 
 const IndexPage = () => (
   <Layout>
@@ -11,13 +12,16 @@ const IndexPage = () => (
 
     <p>
       Here is how this goes: In the following screens, you will be shown or
-      asked to do something. And then asked a question. Answer the question
-      honestly, and hopefully by the end of this journey, you'll have a grasp of
-      what Accessibility is.
+      asked to do something. And then, you'll be asked a question. Answer the
+      question honestly, and hopefully by the end of this journey, you'll have a
+      grasp of what Accessibility is.
     </p>
 
     <p>Sounds Good?</p>
-    <Link to="/chapter-1/">Yes, lets go!</Link>
+
+    <p style={{ textAlign: "center" }}>
+      <PrimaryLink to="/chapter-1/">Yes, lets go!</PrimaryLink>
+    </p>
   </Layout>
 )
 
