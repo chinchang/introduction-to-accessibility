@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 let isTouchDevice = false
-if (window && window.document) {
+if (typeof document !== `undefined`) {
   isTouchDevice = "ontouchstart" in document.documentElement
 }
 
@@ -55,7 +55,6 @@ export function PrimaryLink({ children, ...props }) {
   )
 }
 
-
 export function ClickOrTap() {
-  return isTouchDevice ? 'tap' : 'click';
+  return isTouchDevice ? "tap" : "click"
 }
