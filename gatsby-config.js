@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Introduction to Accessibility`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Never heard about web accessibility? Or know about it but don't understand the importance? Give this a shot.`,
     author: `@chinchang457`,
   },
   plugins: [

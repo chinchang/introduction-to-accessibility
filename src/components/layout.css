@@ -28,7 +28,7 @@ a {
   padding: 4px 12px;
 }
 .btn {
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.1rem;
   border: 2px solid #a377ce;
   border-radius: 0.5rem;
   margin: 0.5rem;
@@ -40,8 +40,9 @@ a {
   background: var(--theme-color);
 }
 .blockquote {
-  padding-left: 1rem;
+  padding: 1rem;
   border-left: 0.5rem solid currentColor;
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .blockquote__author {
@@ -78,6 +79,12 @@ hr {
 .question {
   font-size: 1.5rem;
 }
+.activity-box {
+  border: 2px solid var(--theme-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

@@ -58,3 +58,7 @@ export function PrimaryLink({ children, ...props }) {
 export function ClickOrTap() {
   return isTouchDevice ? "tap" : "click"
 }
+
+export function ActivityBox({ children }) {
+  return <div class="activity-box">{children}</div>
+}

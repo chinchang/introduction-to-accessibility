@@ -2,7 +2,13 @@ import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Button, BlockQuote, Nav, Question } from "../components/common"
+import {
+  Button,
+  BlockQuote,
+  Nav,
+  Question,
+  ActivityBox,
+} from "../components/common"
 
 const Chapter1 = () => {
   const [userResponse, setUserResponse] = useState()
@@ -11,8 +17,10 @@ const Chapter1 = () => {
       <SEO title="Page two" />
       {userResponse === undefined ? (
         <section class="question-area">
-          <Question>Can you read the below given text easily?</Question>
-          <p style={{ fontSize: "8px" }}>"I am a very small text"</p>
+          <Question>Can you read the text in the below box easily?</Question>
+          <ActivityBox>
+            <p style={{ fontSize: "8px" }}>"I am a very small text"</p>
+          </ActivityBox>
 
           <Button onClick={() => setUserResponse(false)}>
             Yes, no problem!
@@ -30,9 +38,9 @@ const Chapter1 = () => {
           <p>
             Exactly! This is because the font size of text is very less small.{" "}
             <mark>
-              Users of the Internet have varying eye sight levels and it's
-              important to have a decent font size so that everyone can read
-              your website without strain.
+              Users of the Internet have varying eye sight levels (due to
+              injury, disease or age factor) and it's important to have a decent
+              font size so that everyone can read your website without strain.
             </mark>
           </p>
 
@@ -62,7 +70,7 @@ const Chapter1 = () => {
         </section>
       )}
 
-      <Nav nextLink="/chapter-2/" />
+      {userResponse !== undefined && <Nav nextLink="/chapter-2/" />}
     </Layout>
   )
 }

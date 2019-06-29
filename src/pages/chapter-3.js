@@ -8,6 +8,7 @@ import {
   Nav,
   Question,
   ClickOrTap,
+  ActivityBox,
 } from "../components/common"
 
 const Chapter1 = () => {
@@ -17,9 +18,12 @@ const Chapter1 = () => {
       <SEO title="Page two" />
       {userResponse === undefined ? (
         <section className="question-area">
-          <p>Check the checkbox below.</p>
-          <input type="checkbox"></input>
-          <label>Check me please</label>
+          <p>Check the checkbox inside the box below.</p>
+
+          <ActivityBox>
+            <input type="checkbox"></input>
+            <label>Check me please</label>
+          </ActivityBox>
 
           <Question>Were you able to click the checkbox easily?</Question>
 
@@ -73,7 +77,7 @@ const Chapter1 = () => {
         </section>
       )}
 
-      <Nav nextLink="/chapter-2/" />
+      {userResponse !== undefined && <Nav nextLink="/chapter-4/" />}
     </Layout>
   )
 }
