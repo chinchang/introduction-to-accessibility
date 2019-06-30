@@ -10,16 +10,14 @@ if (typeof window !== "undefined") {
 
 const IndexPage = () => {
   const isShareApiSupported =
-    typeof navigator !== undefined && !!navigator.share
+    typeof navigator !== "undefined" && !!navigator.share
 
   function shareHandler() {
-    if (navigator.share) {
-      navigator.share({
-        title: "Introduction to Accessibility",
-        text: 'Check out "Introduction to Accessibility"',
-        url: URL,
-      })
-    }
+    navigator.share({
+      title: "Introduction to Accessibility",
+      text: 'Check out "Introduction to Accessibility"',
+      url: URL,
+    })
   }
 
   const [isLinkCopied, setIsLinkCopied] = useState(false)
