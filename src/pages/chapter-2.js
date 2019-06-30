@@ -25,9 +25,7 @@ const Chapter1 = () => {
             </p>
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(false)}>
-            Yes, no problem!
-          </Button>
+          <Button onClick={() => setUserResponse(false)}>Yes</Button>
           <Button onClick={() => setUserResponse(true)}>
             Not easy to read it
           </Button>

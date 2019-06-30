@@ -29,9 +29,7 @@ const Chapter1 = () => {
             be excluded, is likely to agree that the curriculum needs revision.
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(false)}>
-            Yes, no problem!
-          </Button>
+          <Button onClick={() => setUserResponse(false)}>Yes</Button>
           <Button onClick={() => setUserResponse(true)}>
             It's difficult to understand.
           </Button>

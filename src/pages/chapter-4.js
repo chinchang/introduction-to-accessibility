@@ -35,9 +35,7 @@ const Chapter1 = () => {
 
           <Question>Were you able to click the checkbox easily?</Question>
 
-          <Button onClick={() => setUserResponse(false)}>
-            Yes, no problem!
-          </Button>
+          <Button onClick={() => setUserResponse(false)}>Yes</Button>
           <Button onClick={() => setUserResponse(true)}>
             It's difficult to <ClickOrTap />.
           </Button>

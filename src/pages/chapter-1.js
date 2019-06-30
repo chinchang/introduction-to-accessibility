@@ -23,9 +23,7 @@ const Chapter1 = () => {
             <p style={{ fontSize: "8px" }}>"I am a very small text"</p>
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(false)}>
-            Yes, no problem!
-          </Button>
+          <Button onClick={() => setUserResponse(false)}>Yes</Button>
           <Button onClick={() => setUserResponse(true)}>
             Not easy to read it
           </Button>
