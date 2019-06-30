@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-let URL = "https://whya11y.netlify.com"
+let URL = "https://introtoaccessibility.com"
 if (typeof window !== "undefined") {
   URL = window.location.origin
 }
@@ -17,7 +17,7 @@ const IndexPage = () => {
       navigator.share({
         title: "Introduction to Accessibility",
         text: 'Check out "Introduction to Accessibility"',
-        url: "https://whya11y.netlify.com",
+        url: URL,
       })
     }
   }
