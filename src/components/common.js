@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { TransitionGroup, CSSTransition } from "react-transition-group"
 
 let isTouchDevice = false
 if (typeof document !== `undefined`) {
@@ -61,4 +62,16 @@ export function ClickOrTap() {
 
 export function ActivityBox({ children }) {
   return <div class="activity-box">{children}</div>
+}
+
+export function ExplanationView({ children, isVisible }) {
+  return (
+    <TransitionGroup component={null}>
+      {isVisible && (
+        <CSSTransition classNames="view" timeout={300}>
+          <section class="explanation">{children}</section>
+        </CSSTransition>
+      )}
+    </TransitionGroup>
+  )
 }

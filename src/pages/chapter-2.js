@@ -8,6 +8,7 @@ import {
   Nav,
   Question,
   ActivityBox,
+  ExplanationView,
 } from "../components/common"
 
 const Chapter1 = () => {
@@ -33,39 +34,37 @@ const Chapter1 = () => {
         </section>
       ) : null}
 
-      {userResponse && (
-        <section class="explanation">
-          <h1>Color Contrast</h1>
+      <ExplanationView isVisible={userResponse}>
+        <h1>Color Contrast</h1>
 
-          <p>
-            Exactly! This is because the color contrast of the text is very less
-            with respect to its background.{" "}
-            <mark>
-              Users of the Internet have varying eye sight levels and it's
-              important to have a good contrast so that everyone can read your
-              websites without strain
-            </mark>
-            .
-          </p>
+        <p>
+          Exactly! This is because the color contrast of the text is very less
+          with respect to its background.{" "}
+          <mark>
+            Users of the Internet have varying eye sight levels and it's
+            important to have a good contrast so that everyone can read your
+            websites without strain
+          </mark>
+          .
+        </p>
 
-          <p>
-            This is why there is a recommended guideline just to prevent this
-            issue. It requires that,
-          </p>
+        <p>
+          This is why there is a recommended guideline just to prevent this
+          issue. It requires that,
+        </p>
 
-          <BlockQuote
-            authorLink="https://www.w3.org/TR/WCAG21/#contrast-minimum"
-            authorLabel="w3.org"
-          >
-            The visual presentation of text and images of text has a contrast
-            ratio of at least 4.5:1.
-          </BlockQuote>
+        <BlockQuote
+          authorLink="https://www.w3.org/TR/WCAG21/#contrast-minimum"
+          authorLabel="w3.org"
+        >
+          The visual presentation of text and images of text has a contrast
+          ratio of at least 4.5:1.
+        </BlockQuote>
 
-          <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">
-            Read more about Color contrast guidelines.
-          </a>
-        </section>
-      )}
+        <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">
+          Read more about Color contrast guidelines.
+        </a>
+      </ExplanationView>
 
       {userResponse !== undefined && <Nav nextLink="/chapter-3/" />}
     </Layout>
