@@ -11,11 +11,11 @@ import {
   ExplanationView,
 } from "../components/common"
 
-const Chapter1 = () => {
+const Page = () => {
   const [userResponse, setUserResponse] = useState()
   return (
     <Layout>
-      <SEO title="Page two" />
+      <SEO title="Chapter 3" />
       {userResponse === undefined ? (
         <section className="question-area">
           <Question>
@@ -84,4 +84,4 @@ const Chapter1 = () => {
   )
 }
 
-export default Chapter1
+export default Page
