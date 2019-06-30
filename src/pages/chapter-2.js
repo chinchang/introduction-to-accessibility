@@ -50,7 +50,7 @@ const Chapter1 = () => {
 
           <p>
             This is why there is a recommended guideline just to prevent this
-            issue. It says so:
+            issue. It requires that,
           </p>
 
           <BlockQuote

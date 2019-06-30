@@ -51,8 +51,8 @@ const Chapter1 = () => {
           </p>
 
           <p>
-            At the very minimum set your font sizes in em so that users can zoom
-            in your website to increase font sizes.
+            At the very minimum set your font sizes in <code>em</code> unit so
+            that users can zoom in your website to increase font sizes.
           </p>
 
           <BlockQuote

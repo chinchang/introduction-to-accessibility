@@ -18,62 +18,68 @@ const Chapter1 = () => {
       <SEO title="Page two" />
       {userResponse === undefined ? (
         <section className="question-area">
-          <p>Check the checkbox inside the box below.</p>
+          <Question>
+            Can you understand the text in the below box easily?
+          </Question>
 
           <ActivityBox>
-            <input type="checkbox"></input>
-            <label>Check me please</label>
+            Anyone who feels that if so many more students whom we haven’t
+            actually admitted are sitting in on the course than ones we have
+            that the room had to be changed, then probably auditors will have to
+            be excluded, is likely to agree that the curriculum needs revision.
           </ActivityBox>
-
-          <Question>Were you able to click the checkbox easily?</Question>
 
           <Button onClick={() => setUserResponse(false)}>
             Yes, no problem!
           </Button>
           <Button onClick={() => setUserResponse(true)}>
-            It's difficult to <ClickOrTap />.
+            It's difficult to understand.
           </Button>
         </section>
       ) : null}
 
       {userResponse && (
         <section className="explanation">
-          <h1>Labelled Form Controls</h1>
+          <h1>Make text content readable and understandable.</h1>
 
           <p>
-            Yes, I know the checkbox is too small to be clicked. A normal size
-            checkbox could have been just fine for you to click easily. But
-            important thing to understand here is that even the normal size
-            checkbox can be difficult to click for some people. Specially the
-            ones with weak motor skills i.e. Ability to do a pre-determined
-            movement with maximum certainity.
+            The sentence you just read is a highly compounded and complex
+            sentence and requires the reader to put in extra mental focus to
+            figure out the overall meaning of the sentence. It might still be
+            understandable by many people. But{" "}
+            <mark>
+              there are people with disabilities, including reading
+              disabilities, even among highly educated users with specialized
+              knowledge of the subject matter
+            </mark>
+            . It may be possible to accommodate these users by making the text
+            more readable.
           </p>
 
-          <p>
-            This is one of the reasons why there is a recommended guideline to
-            associate a <code>&lt;label&gt;</code> element with the{" "}
-            <code>&lt;input&gt;</code> element (with all form controls in
-            general). This makes the label also a clickable part of the form
-            control. So you don't have to pin-point the form control.
-          </p>
+          <p>Here is the required guideline:</p>
 
           <BlockQuote
-            authorLink="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html"
+            authorLink="https://www.w3.org/WAI/WCAG21/Understanding/reading-level.html"
             authorLabel="w3.org"
           >
-            Present instructions or labels that identify the controls in a form
-            so that users know what input data is expected.
+            When text requires reading ability more advanced than the lower
+            secondary education level after removal of proper names and titles,
+            supplemental content, or a version that does not require reading
+            ability more advanced than the lower secondary education level, is
+            available.
           </BlockQuote>
 
-          <a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">
-            Read more about "Labelled Form Controls".
+          <a href="https://www.w3.org/WAI/WCAG21/Understanding/reading-level.html">
+            Read more about "Reading Level".
           </a>
 
-          <p>
-            Again, note that this is just one of the reasons why form controls
-            should be correctly labelled. There are more benefits to it which
-            you can read at above link.
-          </p>
+          <p>In short,</p>
+          <ul>
+            <li>Avoid difficult and less common words</li>
+            <li>Write short sentences</li>
+            <li>Don't use more than two conjuctions in a sentence</li>
+            <li>Bullet points help wherever applicable</li>
+          </ul>
         </section>
       )}
 
