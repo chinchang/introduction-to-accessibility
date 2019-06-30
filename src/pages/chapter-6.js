@@ -24,7 +24,7 @@ const Page = () => {
     setTimeout(() => {
       setNotification("")
       setShouldShowQuestion(true)
-    }, 700)
+    }, 650)
   }
   return (
     <Layout>
@@ -84,7 +84,7 @@ const Page = () => {
         </ol>
       </ExplanationView>
 
-      {userResponse !== undefined && <Nav nextLink="/chapter-6/" />}
+      {userResponse !== undefined && <Nav nextLink="/finish/" />}
     </Layout>
   )
 }

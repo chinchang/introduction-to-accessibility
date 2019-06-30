@@ -31,7 +31,7 @@ const Page = () => {
 
           <Button onClick={() => setUserResponse(false)}>Yes</Button>
           <Button onClick={() => setUserResponse(true)}>
-            It's difficult to understand.
+            No. It's difficult to understand.
           </Button>
         </section>
       ) : null}

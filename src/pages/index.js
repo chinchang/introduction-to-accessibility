@@ -12,7 +12,7 @@ const IndexPage = () => (
       Here is how this goes: In the following screens, you will be shown or
       asked to do something. And then, you'll be asked a question. Answer the
       question honestly, and hopefully by the end of this journey, you'll have a
-      grasp of what Accessibility is.
+      good grasp of what Web Accessibility is.
     </p>
 
     <p>Sounds Good?</p>

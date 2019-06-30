@@ -19,9 +19,8 @@ const Page = () => {
       {userResponse === undefined ? (
         <section class="question-area">
           <Question>
-            There is a input field in the box below. It has a value "Alladin".
-            Do you know what was asked for which the value is filled as
-            "Alladin"?
+            There is an input field in the box below. It has a value "Alladin".
+            Do you know what was supposed to be filled in that input field?
           </Question>
           <ActivityBox>
             <input placeholder="Your favourite movie" value="Alladin"></input>
@@ -50,12 +49,12 @@ const Page = () => {
           What's wrong in it? Nowadays many input fields in the{" "}
           <mark>
             forms are auto-filled by browsers for us. In such a situation, if
-            someone was to cross-check if the filled value is appropriate what
-            they really wanted to put, they have no way to know what's really
-            asked in a particular input field!
+            the user wants to cross-check the filled values if they are
+            appropriate, they have no way to know what's really asked in a
+            particular input field!
           </mark>{" "}
-          Same issue also applies to a user with short memory who started
-          filling the form, and then wants to verify the fields mid-way. So
+          The same issue also applies to a user with short memory who started
+          filling the form and then wants to verify the fields mid-way. So
           always label your input fields such that the label/instruction is
           accessible to the user at all times.
         </p>
