@@ -17,6 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--site-bg-color);
 }
+input,
 button {
   font: inherit;
 }
