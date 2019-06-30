@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 let URL = "https://whya11y.netlify.com"
-if (typeof window !== undefined) {
+if (typeof window !== "undefined") {
   URL = window.location.origin
 }
 
