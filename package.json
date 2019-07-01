@@ -1,7 +1,7 @@
 {
   "name": "intro-to-accessibility",
   "private": true,
-  "description": "Introduction to Web Accessibility for developers and designer",
+  "description": "An interactive and practical introduction to Web Accessibility for everyone",
   "version": "0.1.0",
   "author": "Kushagra Gour <chinchang457@gmail.com>",
   "dependencies": {
