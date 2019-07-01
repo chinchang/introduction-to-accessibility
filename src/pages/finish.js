@@ -62,8 +62,8 @@ const IndexPage = () => {
 
       <p>
         Hope it was a learning experience for you. If it was, please pass this
-        on to every other developer & designer you know. Let's make the Web a
-        better place!
+        on to every other developer, designer, marketer, any you know working
+        with digital content. Let's make the Web a better place!
       </p>
 
       <p style={{ textAlign: "center" }}>
