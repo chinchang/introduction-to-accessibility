@@ -23,7 +23,11 @@ const Page = () => {
             Do you know what was supposed to be filled in that input field?
           </Question>
           <ActivityBox>
-            <input placeholder="Your favourite movie" value="Alladin"></input>
+            <input
+              type="text"
+              placeholder="Your favourite movie"
+              defaultValue="Alladin"
+            />
           </ActivityBox>
 
           <Button onClick={() => setUserResponse(true)}>I can guess</Button>

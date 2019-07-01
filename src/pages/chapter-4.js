@@ -59,10 +59,13 @@ const Page = () => {
 
         <p>
           This is one of the reasons why there is a recommended guideline to
-          associate a <code>&lt;label&gt;</code> element with the{" "}
-          <code>&lt;input&gt;</code> element (with all form controls in
-          general). This makes the label also a clickable part of the form
-          control. So you don't have to pin-point the form control.
+          <mark>
+            associate a <code>&lt;label&gt;</code> element with the{" "}
+            <code>&lt;input&gt;</code> element (with all form controls in
+            general). This makes the label also a clickable part of the form
+            control
+          </mark>
+          . So you don't have to pin-point the form control.
         </p>
 
         <BlockQuote
