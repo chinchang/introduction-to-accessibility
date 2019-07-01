@@ -84,7 +84,7 @@ const Page = () => {
         </ol>
       </ExplanationView>
 
-      {userResponse !== undefined && <Nav nextLink="/finish/" />}
+      {userResponse !== undefined && <Nav chapter={6} />}
     </Layout>
   )
 }

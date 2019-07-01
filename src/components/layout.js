@@ -44,8 +44,20 @@ const Layout = ({ children }) => {
             A <a href="https://kushagra.dev/lab/">Kushagra Gour</a> product.
             Built with
             {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>. Hosted on{" "}
-            <a href="https://netlify.com">Netlify</a>
+            <a rel="external" href="https://www.gatsbyjs.org">
+              Gatsby
+            </a>
+            . Hosted on{" "}
+            <a rel="external" href="https://netlify.com">
+              Netlify
+            </a>{" "}
+            .{" "}
+            <a
+              rel="external"
+              href="https://github.com/chinchang/introduction-to-accessibility"
+            >
+              Contribute
+            </a>
           </p>
         </footer>
       </div>

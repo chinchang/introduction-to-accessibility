@@ -47,16 +47,23 @@ const IndexPage = () => {
           inaccessible.
         </li>
         <li>
-          To bring-forth the fact that what you find okay for yourself, can be
-          inaccessible to someone else. So the best we can do to make our
+          To bring forth the fact that what you find okay for yourself, can be
+          inaccessible for someone else. So the best we can do to make our
           websites accessible to most people is -{" "}
-          <mark>Follow the recommended guidelines</mark>.
+          <mark>
+            Follow the{" "}
+            <a href="https://www.w3.org/TR/WCAG21/" rel="external">
+              recommended guidelines
+            </a>
+          </mark>
+          .
         </li>
       </ol>
 
       <p>
         Hope it was a learning experience for you. If it was, please pass this
-        on to every other developer & designer you know.
+        on to every other developer & designer you know. Let's make the Web a
+        better place!
       </p>
 
       <p style={{ textAlign: "center" }}>

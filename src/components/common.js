@@ -26,12 +26,20 @@ export function BlockQuote({ authorLabel, authorLink, children }) {
   )
 }
 
-export function Nav({ nextLink }) {
+export function Nav({ chapter }) {
   return (
     <nav className="decorative-top site-nav">
-      <Link to="/">Go back to the homepage</Link>
+      {chapter === 1 ? (
+        <Link to="/">Back to the home</Link>
+      ) : (
+        <Link to={`/chapter-${chapter - 1}`}>Previous Chapter</Link>
+      )}
 
-      <PrimaryLink to={nextLink}>Next Chapter</PrimaryLink>
+      {chapter === 6 ? (
+        <PrimaryLink to="/finish/">Finish</PrimaryLink>
+      ) : (
+        <PrimaryLink to={`/chapter-${chapter + 1}`}>Next Chapter</PrimaryLink>
+      )}
     </nav>
   )
 }

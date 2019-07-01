@@ -76,6 +76,7 @@ hr {
 .site-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .question {
   font-size: 1.5rem;
