@@ -31,7 +31,6 @@ const Page = () => {
           </Button>
         </section>
       ) : null}
-
       <ExplanationView isVisible={userResponse}>
         <h1>Color Contrast</h1>
 

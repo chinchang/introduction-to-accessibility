@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Introduction to Accessibility`,
-    description: `Never heard about web accessibility? Or know about it but don't understand the importance? Give this a shot.`,
+    description: `An interactive and practical intro to Web Accessibility for everyone!`,
     author: `@chinchang457`,
   },
   plugins: [
