@@ -41,8 +41,8 @@ const Layout = ({ children }) => {
           </p>
 
           <p>
-            A <a href="https://kushagra.dev">Kushagra Gour</a> product. Built
-            with
+            A <a href="https://kushagra.dev/lab/">Kushagra Gour</a> product.
+            Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>. Hosted on{" "}
             <a href="https://netlify.com">Netlify</a>
