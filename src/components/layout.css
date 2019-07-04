@@ -98,6 +98,13 @@ hr {
   transition: all 300ms;
 }
 
+.disclaimer {
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #dbe9ff;
+  color: #18468e;
+  border: 1px solid;
+}
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

@@ -15,6 +15,13 @@ const IndexPage = () => (
       good grasp of what Web Accessibility is.
     </p>
 
+    <p className="disclaimer">
+      <strong>Disclaimer</strong>: This is not a survey and your answers/actions
+      are not recorded or stored. This is solely for Web Accessibility education
+      by making you go through some practical and interactive Accessibility
+      issues.
+    </p>
+
     <p>Sounds Good?</p>
 
     <p style={{ textAlign: "center" }}>
