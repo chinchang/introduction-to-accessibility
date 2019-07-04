@@ -10,13 +10,19 @@ import {
   ClickOrTap,
   ActivityBox,
   ExplanationView,
+  ChapterLabel,
 } from "../components/common"
 
 const Page = () => {
   const [userResponse, setUserResponse] = useState()
+
+  const chapter = 4
+
   return (
     <Layout>
-      <SEO title="Chapter 4" />
+      <SEO title={`Chapter ${chapter}`} />
+      <ChapterLabel chapter={chapter} />
+
       {userResponse === undefined ? (
         <section className="question-area">
           <p>Check the checkbox inside the box below.</p>
@@ -87,7 +93,7 @@ const Page = () => {
         </p>
       </ExplanationView>
 
-      {userResponse !== undefined && <Nav chapter={4} />}
+      {userResponse !== undefined && <Nav chapter={chapter} />}
     </Layout>
   )
 }

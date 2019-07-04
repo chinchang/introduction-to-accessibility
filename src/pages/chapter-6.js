@@ -10,12 +10,14 @@ import {
   ActivityBox,
   ExplanationView,
   ClickOrTap,
+  ChapterLabel,
 } from "../components/common"
 
 const Page = () => {
   const [userResponse, setUserResponse] = useState()
   const [shouldShowQuestion, setShouldShowQuestion] = useState(false)
   const [notification, setNotification] = useState("")
+  const chapter = 6
 
   function showNotification() {
     setNotification(
@@ -26,13 +28,18 @@ const Page = () => {
       setShouldShowQuestion(true)
     }, 650)
   }
+
   return (
     <Layout>
-      <SEO title="Chapter 6" />
+      <SEO title={`Chapter ${chapter}`} />
+      <ChapterLabel chapter={chapter} />
+
       {userResponse === undefined ? (
         <section class="question-area">
-          Press the button in the box below and carefully read the notification
-          that appears after that.
+          <p>
+            Press the button in the box below and carefully read the
+            notification that appears after that.
+          </p>
           <ActivityBox>
             <Button onClick={showNotification}>
               <ClickOrTap /> me to see notification
@@ -84,7 +91,7 @@ const Page = () => {
         </ol>
       </ExplanationView>
 
-      {userResponse !== undefined && <Nav chapter={6} />}
+      {userResponse !== undefined && <Nav chapter={chapter} />}
     </Layout>
   )
 }

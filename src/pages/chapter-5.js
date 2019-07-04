@@ -9,13 +9,18 @@ import {
   Question,
   ActivityBox,
   ExplanationView,
+  ChapterLabel,
 } from "../components/common"
 
 const Page = () => {
   const [userResponse, setUserResponse] = useState()
+  const chapter = 5
+
   return (
     <Layout>
-      <SEO title="Chapter 5" />
+      <SEO title={`Chapter ${chapter}`} />
+      <ChapterLabel chapter={chapter} />
+
       {userResponse === undefined ? (
         <section class="question-area">
           <Question>

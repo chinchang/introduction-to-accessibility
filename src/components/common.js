@@ -6,6 +6,8 @@ let isTouchDevice = false
 if (typeof document !== `undefined`) {
   isTouchDevice = "ontouchstart" in document.documentElement
 }
+export { isTouchDevice }
+export const NUM_CHAPTERS = 6
 
 export function Button({ onClick, children }) {
   return (
@@ -35,7 +37,11 @@ export function Nav({ chapter }) {
         <Link to={`/chapter-${chapter - 1}`}>Previous Chapter</Link>
       )}
 
-      {chapter === 6 ? (
+      <span>
+        Chapter {chapter} of {NUM_CHAPTERS}
+      </span>
+
+      {chapter === NUM_CHAPTERS ? (
         <PrimaryLink to="/finish/">Finish</PrimaryLink>
       ) : (
         <PrimaryLink to={`/chapter-${chapter + 1}`}>Next Chapter</PrimaryLink>
@@ -81,5 +87,13 @@ export function ExplanationView({ children, isVisible }) {
         </CSSTransition>
       )}
     </TransitionGroup>
+  )
+}
+
+export function ChapterLabel({ chapter }) {
+  return (
+    <div class="chapter-tag">
+      Chapter {chapter} of {NUM_CHAPTERS}
+    </div>
   )
 }
