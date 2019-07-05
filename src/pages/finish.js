@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Button } from "../components/common"
 
 let URL = "https://introtoaccessibility.com"
 if (typeof window !== "undefined") {
@@ -14,8 +15,9 @@ const IndexPage = () => {
 
   function shareHandler() {
     navigator.share({
-      title: "Introduction to Accessibility",
-      text: 'Check out "Introduction to Accessibility"',
+      title: "An interactive & practical introduction to Web Accessibility",
+      text:
+        'Check out an interactive & practical "Introduction to Web Accessibility"',
       url: URL,
     })
   }
@@ -67,12 +69,12 @@ const IndexPage = () => {
       </p>
 
       <p style={{ textAlign: "center" }}>
-        <button onClick={copyLink} style={shareLinkStyles}>
+        <Button onClick={copyLink} style={shareLinkStyles}>
           Copy link{isLinkCopied ? " (copied)" : null}
-        </button>
+        </Button>
         {!isShareApiSupported && (
           <a
-            href={`http://twitter.com/share?url=${URL}&text=Introduction to Web Accessibility&hashtags=accessibility,a11y&via=chinchang457`}
+            href={`http://twitter.com/share?url=${URL}&text=An interactive & practical introduction to Web Accessibility&hashtags=accessibility,a11y&via=chinchang457`}
             target="_blank"
             rel="external noopener noreferrer"
             style={shareLinkStyles}
@@ -81,9 +83,9 @@ const IndexPage = () => {
           </a>
         )}
         {isShareApiSupported && (
-          <button onClick={shareHandler} style={shareLinkStyles}>
+          <Button onClick={shareHandler} style={shareLinkStyles}>
             Share
-          </button>
+          </Button>
         )}
       </p>
     </Layout>
