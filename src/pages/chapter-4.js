@@ -33,7 +33,7 @@ const Page = () => {
               style={{
                 margin: 0,
                 marginRight: "10px",
-                transform: "scale(0.3)",
+                transform: "scale(0.5)",
               }}
             ></input>
             <label>Check me please</label>
@@ -41,9 +41,8 @@ const Page = () => {
 
           <Question>Were you able to click the checkbox easily?</Question>
 
-          <Button onClick={() => setUserResponse(false)}>Yes</Button>
           <Button onClick={() => setUserResponse(true)}>
-            It's difficult to <ClickOrTap />.
+           No
           </Button>
         </section>
       ) : null}
@@ -52,7 +51,7 @@ const Page = () => {
         <h1>Labelled Form Controls</h1>
 
         <p>
-          Yes, I know the checkbox is too small to be clicked. A normal size
+          The checkbox is too small to be easily clicked. A normal size
           checkbox could have been just fine for you to click easily. But
           important thing to understand here is that{" "}
           <mark>
@@ -64,7 +63,7 @@ const Page = () => {
         </p>
 
         <p>
-          This is one of the reasons why there is a recommended guideline to
+          This is one of the reasons why there is a recommended guideline to 
           <mark>
             associate a <code>&lt;label&gt;</code> element with the{" "}
             <code>&lt;input&gt;</code> element (with all form controls in
