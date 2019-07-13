@@ -47,7 +47,11 @@ const Page = () => {
           The sentence you just read is a highly compounded. It's complexity requires the reader to put 
 in a lot of mental focus to figure out the
           overall meaning of the sentence. It might still be understandable by
-          many people. But{" "}
+          many people. 
+ </p>
+
+        <p
+But{" "}
           <mark>
             there are people with disabilities, including reading disabilities,
             even among highly educated users with specialized knowledge of the
