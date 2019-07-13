@@ -23,16 +23,15 @@ const Page = () => {
 
       {userResponse === undefined ? (
         <section class="question-area">
-          <Question>Can you read the text in the below box easily?</Question>
+          <Question>Can you easily read the text in the box below?</Question>
           <ActivityBox>
             <p style={{ margin: 0, fontSize: "2rem", color: "#eee" }}>
-              "Read me now"
+              "This text has poor color contrast."
             </p>
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(false)}>Yes</Button>
           <Button onClick={() => setUserResponse(true)}>
-            Not easy to read it
+            No
           </Button>
         </section>
       ) : null}
@@ -40,12 +39,12 @@ const Page = () => {
         <h1>Color Contrast</h1>
 
         <p>
-          Exactly! This is because the color contrast of the text is very less
+          Exactly! This is because the color contrast of the text is very low
           with respect to its background.{" "}
           <mark>
             Users of the Internet have varying eye sight levels and it's
-            important to have a good contrast so that everyone can read your
-            websites without strain
+            important to have a good color contrast between the text on your website and the background color
+            so that everyone can read your websites without strain
           </mark>
           .
         </p>
@@ -64,7 +63,7 @@ const Page = () => {
         </BlockQuote>
 
         <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">
-          Read more about Color contrast guidelines.
+          Read more about Color contrast guidelines from w3.
         </a>
       </ExplanationView>
 
