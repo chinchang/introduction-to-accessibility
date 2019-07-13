@@ -22,7 +22,7 @@ const Page = () => {
       <ChapterLabel chapter={chapter} />
 
       {userResponse === undefined ? (
-        <section class="question-area">
+        <section className="question-area">
           <Question>
             There is an input field in the box below. It has a value "Alladin".
             Do you know what was supposed to be filled in that input field?

@@ -22,7 +22,7 @@ const Page = () => {
       <ChapterLabel chapter={chapter} />
 
       {userResponse === undefined ? (
-        <section class="question-area">
+        <section className="question-area">
           <Question>Can you easily read the text in the box below?</Question>
           <ActivityBox>
             <p style={{ fontSize: "8px" }}>

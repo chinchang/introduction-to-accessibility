@@ -7,7 +7,6 @@ import {
   BlockQuote,
   Nav,
   Question,
-  ClickOrTap,
   ActivityBox,
   ExplanationView,
   ChapterLabel,

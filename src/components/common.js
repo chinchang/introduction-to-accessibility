@@ -32,7 +32,7 @@ export function Nav({ chapter }) {
   return (
     <nav className="decorative-top site-nav">
       {chapter === 1 ? (
-        <Link to="/">Back to the home</Link>
+        <Link to="/">Home</Link>
       ) : (
         <Link to={`/chapter-${chapter - 1}`}>Previous Chapter</Link>
       )}
@@ -58,13 +58,13 @@ export function PrimaryLink({ children, ...props }) {
   const isExternal = props.to.match(/http/)
   if (isExternal) {
     return (
-      <a class="link--primary" href={props.href}>
+      <a className="link--primary" href={props.href}>
         {children}
       </a>
     )
   }
   return (
-    <Link class="link--primary" {...props}>
+    <Link className="link--primary" {...props}>
       {children}
     </Link>
   )
@@ -75,7 +75,7 @@ export function ClickOrTap() {
 }
 
 export function ActivityBox({ children }) {
-  return <div class="activity-box">{children}</div>
+  return <div className="activity-box">{children}</div>
 }
 
 export function ExplanationView({ children, isVisible }) {
@@ -83,7 +83,7 @@ export function ExplanationView({ children, isVisible }) {
     <TransitionGroup component={null}>
       {isVisible && (
         <CSSTransition classNames="view" timeout={300}>
-          <section class="explanation">{children}</section>
+          <section className="explanation">{children}</section>
         </CSSTransition>
       )}
     </TransitionGroup>
@@ -92,7 +92,7 @@ export function ExplanationView({ children, isVisible }) {
 
 export function ChapterLabel({ chapter }) {
   return (
-    <div class="chapter-tag">
+    <div className="chapter-tag">
       Chapter {chapter} of {NUM_CHAPTERS}
     </div>
   )

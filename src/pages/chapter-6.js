@@ -35,7 +35,7 @@ const Page = () => {
       <ChapterLabel chapter={chapter} />
 
       {userResponse === undefined ? (
-        <section class="question-area">
+        <section className="question-area">
           <p>
             Press the button in the box below and carefully read the
             notification that appears.
@@ -52,9 +52,7 @@ const Page = () => {
                 Were you able to read the notification that showed after
                 clicking the button?
               </Question>
-              <Button onClick={() => setUserResponse(true)}>
-                No
-              </Button>
+              <Button onClick={() => setUserResponse(true)}>No</Button>
             </>
           )}
         </section>
