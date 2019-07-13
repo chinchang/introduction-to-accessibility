@@ -11,15 +11,13 @@ const IndexPage = () => (
     <p>
       Here is how this goes: In the following screens, you will be shown or
       asked to do something. And then, you'll be asked a question. Answer the
-      question honestly, and hopefully by the end of this journey, you'll have a
-      good grasp of what Web Accessibility is.
+      question honestly, and hopefully by the end of this journey, 
+      you'll have learned some fundamental principles that will help you develop more accessibile web sites.
     </p>
 
     <p className="disclaimer">
       <strong>Disclaimer</strong>: This is not a survey and your answers/actions
-      are not recorded or stored. This is solely for Web Accessibility education
-      by making you go through some practical and interactive Accessibility
-      issues.
+      are not recorded or stored. This website is solely for educational purposes.
     </p>
 
     <p>Sounds Good?</p>
