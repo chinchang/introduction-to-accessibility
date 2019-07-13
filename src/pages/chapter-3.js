@@ -34,9 +34,7 @@ const Page = () => {
             be excluded, is likely to agree that the curriculum needs revision.
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(true)}>
-            No
-          </Button>
+          <Button onClick={() => setUserResponse(true)}>No</Button>
         </section>
       ) : null}
 
@@ -44,14 +42,14 @@ const Page = () => {
         <h1>Make text content readable and understandable.</h1>
 
         <p>
-          The sentence you just read is a highly compounded. It's complexity requires the reader to put 
-in a lot of mental focus to figure out the
+          The sentence you just read is a highly compounded. It's complexity
+          requires the reader to put in a lot of mental focus to figure out the
           overall meaning of the sentence. It might still be understandable by
-          many people. 
- </p>
+          many people.
+        </p>
 
-        <p
-But{" "}
+        <mark>
+          But{" "}
           <mark>
             there are people with disabilities, including reading disabilities,
             even among highly educated users with specialized knowledge of the
@@ -59,7 +57,7 @@ But{" "}
           </mark>
           . It is always possible to accommodate these users by making the text
           more readable.
-        </p>
+        </mark>
 
         <p>Here is the required guideline:</p>
 

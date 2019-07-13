@@ -25,12 +25,12 @@ const Page = () => {
         <section class="question-area">
           <Question>Can you easily read the text in the box below?</Question>
           <ActivityBox>
-            <p style={{ fontSize: "8px" }}>"This text has a very small font size."</p>
+            <p style={{ fontSize: "8px" }}>
+              "This text has a very small font size."
+            </p>
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(true)}>
-            No
-          </Button>
+          <Button onClick={() => setUserResponse(true)}>No</Button>
         </section>
       ) : null}
 
@@ -41,8 +41,9 @@ const Page = () => {
           Exactly! This is because at 8px, the font size of text is very small.{" "}
           <mark>
             Users of the Internet have varying eye sight levels (due to injury,
-            disease or age factor) and it's important to display text in a font size
-            that is large enough so that everyone can read your website without straining.
+            disease or age factor) and it's important to display text in a font
+            size that is large enough so that everyone can read your website
+            without straining.
           </mark>
         </p>
 
@@ -53,8 +54,9 @@ const Page = () => {
         </p>
 
         <p>
-          A recommendation: set your font sizes using the <code>em</code> unit instead of the <code>px</code> unit so
-          that users can zoom in your website to increase font sizes.
+          A recommendation: set your font sizes using the <code>em</code> unit
+          instead of the <code>px</code> unit so that users can zoom in your
+          website to increase font sizes.
         </p>
 
         <BlockQuote

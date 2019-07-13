@@ -40,8 +40,8 @@ const IndexPage = () => {
       <SEO title="End" />
 
       <p>
-        In the preceding chapters, you went through some extremely unusable examples
-        of web content. The motivation of those examples was two-fold:
+        In the preceding chapters, you went through some extremely unusable
+        examples of web content. The motivation of those examples was two-fold:
       </p>
       <ol>
         <li>
@@ -49,9 +49,9 @@ const IndexPage = () => {
           inaccessible.
         </li>
         <li>
-          The goal of these examples was to demonstrate that what you find okay for yourself can be
-          inaccessible for someone else. So the best we can do to make our
-          websites accessible to most people is -{" "}
+          The goal of these examples was to demonstrate that what you find okay
+          for yourself can be inaccessible for someone else. So the best we can
+          do to make our websites accessible to most people is -{" "}
           <mark>
             Follow the{" "}
             <a href="https://www.w3.org/TR/WCAG21/" rel="external">

@@ -30,9 +30,7 @@ const Page = () => {
             </p>
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(true)}>
-            No
-          </Button>
+          <Button onClick={() => setUserResponse(true)}>No</Button>
         </section>
       ) : null}
       <ExplanationView isVisible={userResponse}>
@@ -43,8 +41,9 @@ const Page = () => {
           with respect to its background.{" "}
           <mark>
             Users of the Internet have varying eye sight levels and it's
-            important to have a good color contrast between the text on your website and the background color
-            so that everyone can read your websites without strain
+            important to have a good color contrast between the text on your
+            website and the background color so that everyone can read your
+            websites without strain
           </mark>
           .
         </p>
