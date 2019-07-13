@@ -35,7 +35,6 @@ const Page = () => {
             />
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(true)}>I can guess</Button>
           <Button onClick={() => setUserResponse(true)}>No</Button>
         </section>
       ) : null}
@@ -77,7 +76,7 @@ const Page = () => {
         </BlockQuote>
 
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/labels-or-instructions.html">
-          Read more about "Labels or Instructions".
+          Read more about "Labels or Instructions" from w3.
         </a>
       </ExplanationView>
 
