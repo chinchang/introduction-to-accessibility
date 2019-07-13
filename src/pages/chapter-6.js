@@ -38,7 +38,7 @@ const Page = () => {
         <section class="question-area">
           <p>
             Press the button in the box below and carefully read the
-            notification that appears after that.
+            notification that appears.
           </p>
           <ActivityBox>
             <Button onClick={showNotification}>
@@ -52,9 +52,8 @@ const Page = () => {
                 Were you able to read the notification that showed after
                 clicking the button?
               </Question>
-              <Button onClick={() => setUserResponse(false)}>Yes</Button>
               <Button onClick={() => setUserResponse(true)}>
-                No, I couldn't read
+                No
               </Button>
             </>
           )}
@@ -76,11 +75,11 @@ const Page = () => {
         </BlockQuote>
 
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/timing-adjustable.html">
-          Read more about "Timing Adjustable".
+          Read more about "Timing Adjustable" from w3.
         </a>
 
         <p>
-          Websites are filled with things like alerts, notification etc that
+          Websites are filled with things like alerts and notifications that
           show for a short duration and then go away. Here are few things you
           can do to make them more accessible:
         </p>
