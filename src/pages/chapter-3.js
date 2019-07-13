@@ -24,7 +24,7 @@ const Page = () => {
       {userResponse === undefined ? (
         <section className="question-area">
           <Question>
-            Can you understand the text in the below box easily?
+            Can you easily understand the text in the box below?
           </Question>
 
           <ActivityBox>
@@ -34,9 +34,8 @@ const Page = () => {
             be excluded, is likely to agree that the curriculum needs revision.
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(false)}>Yes</Button>
           <Button onClick={() => setUserResponse(true)}>
-            No. It's difficult to understand.
+            No
           </Button>
         </section>
       ) : null}
@@ -45,8 +44,8 @@ const Page = () => {
         <h1>Make text content readable and understandable.</h1>
 
         <p>
-          The sentence you just read is a highly compounded and complex sentence
-          and requires the reader to put in extra mental focus to figure out the
+          The sentence you just read is a highly compounded. It's complexity requires the reader to put 
+in a lot of mental focus to figure out the
           overall meaning of the sentence. It might still be understandable by
           many people. But{" "}
           <mark>
@@ -54,7 +53,7 @@ const Page = () => {
             even among highly educated users with specialized knowledge of the
             subject matter
           </mark>
-          . It may be possible to accommodate these users by making the text
+          . It is always possible to accommodate these users by making the text
           more readable.
         </p>
 
@@ -72,7 +71,7 @@ const Page = () => {
         </BlockQuote>
 
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/reading-level.html">
-          Read more about "Reading Level".
+          Read more about "Reading Level" from w3.
         </a>
 
         <p>In short,</p>
