@@ -23,14 +23,13 @@ const Page = () => {
 
       {userResponse === undefined ? (
         <section class="question-area">
-          <Question>Can you read the text in the below box easily?</Question>
+          <Question>Can you easily read the text in the box below?</Question>
           <ActivityBox>
-            <p style={{ fontSize: "8px" }}>"I am a very small text"</p>
+            <p style={{ fontSize: "8px" }}>"This text has a very small font size."</p>
           </ActivityBox>
 
-          <Button onClick={() => setUserResponse(false)}>Yes</Button>
           <Button onClick={() => setUserResponse(true)}>
-            Not easy to read it
+            No
           </Button>
         </section>
       ) : null}
@@ -39,11 +38,11 @@ const Page = () => {
         <h1>Resize text</h1>
 
         <p>
-          Exactly! This is because the font size of text is very less small.{" "}
+          Exactly! This is because at 8px, the font size of text is very small.{" "}
           <mark>
             Users of the Internet have varying eye sight levels (due to injury,
-            disease or age factor) and it's important to have a decent font size
-            so that everyone can read your website without strain.
+            disease or age factor) and it's important to display text in a font size
+            that is large enough so that everyone can read your website without straining.
           </mark>
         </p>
 
@@ -54,7 +53,7 @@ const Page = () => {
         </p>
 
         <p>
-          At the very minimum set your font sizes in <code>em</code> unit so
+          A recommendation: set your font sizes using the <code>em</code> unit instead of the <code>px</code> unit so
           that users can zoom in your website to increase font sizes.
         </p>
 
@@ -68,7 +67,7 @@ const Page = () => {
         </BlockQuote>
 
         <a href="https://www.w3.org/WAI/WCAG21/Understanding/resize-text.html">
-          Read more about "Resize texts".
+          Read more about "Resize texts" from w3.
         </a>
       </ExplanationView>
 
