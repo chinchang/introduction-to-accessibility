@@ -79,7 +79,7 @@ const Page = () => {
         <ul>
           <li>Avoid difficult and less common words</li>
           <li>Write short sentences</li>
-          <li>Don't use more than two conjuctions in a sentence</li>
+          <li>Don't use more than two conjunctions in a sentence</li>
           <li>Bullet points help wherever applicable</li>
         </ul>
       </ExplanationView>
